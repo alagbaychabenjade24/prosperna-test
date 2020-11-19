@@ -1,0 +1,99 @@
+.homepage {
+	background-image: url(../../assets/luis-villasmil-UoYYROtkD-Q-unsplash.jpg);
+	background-size: cover;
+	margin: 30px;
+	height: 100vh;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+
+	.sidebar {
+		color: rgb(99, 99, 99);
+		display: flex;
+		align-items: center;
+		flex: 2;
+
+		&__container {
+			background-color: rgba(255, 255, 255, 0.849);
+			padding: 20px;
+		}
+
+		&__top {
+			h1 {
+				font-size: 40px;
+
+				small {
+					font-size: 18px;
+				}
+			}
+
+			&__heading {
+				&--green {
+					color: green;
+				}
+			}
+
+			h2 {
+				color: green;
+				font-weight: 500;
+			}
+		}
+
+		&__bottom {
+			font-weight: 600;
+		}
+	}
+
+	.schedule {
+		width: 100%;
+		flex: 1;
+		margin: 0 auto;
+		text-align: center;
+		height: 100%;
+
+		&__container {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__left {
+			color: white;
+			background-color: rgb(33, 204, 33);
+			padding: 30px 20px;
+			border-radius: 10px 0 0 10px;
+		}
+
+		&__right {
+			padding: 30px 20px;
+			text-align: center;
+			display: grid;
+			grid-gap: 5px;
+			background-color: white;
+			border-radius: 0 10px 10px 0;
+
+			h1 {
+				color: rgb(99, 99, 99);
+				font-size: 18px;
+
+				span {
+					color: green;
+				}
+			}
+
+			input {
+				margin: 0 3px;
+				padding: 9px 15px;
+				border: 0.5px solid gray;
+				border-radius: 5px;
+				outline: none;
+			}
+
+			input[type='submit'] {
+				background-color: green;
+				color: white;
+				border: 0.5px solid green;
+				cursor: pointer;
+			}
+		}
+	}
+}
